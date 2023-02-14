@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="5" total="6" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[85-15 <--- This value has been passed into ---> [[ChromeDriver: chrome on WINDOWS (5814edb64a75209fe54987e157db3ff9)] -> xpath: //input[@name='SingleLineAddressSearch']]br]]>
+    </line>
+    <line>
+      <![CDATA[84-11 <--- This value has been passed into ---> [[ChromeDriver: chrome on WINDOWS (5814edb64a75209fe54987e157db3ff9)] -> xpath: (//input[@name='AddressLine1'])[2]]br]]>
+    </line>
+    <line>
+      <![CDATA[3g <--- This value has been passed into ---> [[ChromeDriver: chrome on WINDOWS (5814edb64a75209fe54987e157db3ff9)] -> xpath: //input[@id='addressLine2Modal']]br]]>
+    </line>
+    <line>
+      <![CDATA[Elmhurst <--- This value has been passed into ---> [[ChromeDriver: chrome on WINDOWS (5814edb64a75209fe54987e157db3ff9)] -> xpath: //input[@id='cityModal']]br]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-02-13T20:29:11 PST" name="Suite" finished-at="2023-02-13T20:29:52 PST" duration-ms="41209">
+    <groups>
+    </groups>
+    <test started-at="2023-02-13T20:29:11 PST" name="Test" finished-at="2023-02-13T20:29:52 PST" duration-ms="41209">
+      <class name="progressive.tdd.test.property.PropertyQuoteTest">
+        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:progressive.tdd.test.property.PropertyQuoteTest@29215f06]" started-at="2023-02-13T20:29:11 PST" name="setUpDriver" finished-at="2023-02-13T20:29:15 PST" duration-ms="4482" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method signature="creatpropertyQoteTest()[pri:0, instance:progressive.tdd.test.property.PropertyQuoteTest@29215f06]" started-at="2023-02-13T20:29:15 PST" name="creatpropertyQoteTest" finished-at="2023-02-13T20:29:52 PST" duration-ms="36363" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[85-15 <--- This value has been passed into ---> [[ChromeDriver: chrome on WINDOWS (5814edb64a75209fe54987e157db3ff9)] -> xpath: //input[@name='SingleLineAddressSearch']]br]]>
+            </line>
+            <line>
+              <![CDATA[84-11 <--- This value has been passed into ---> [[ChromeDriver: chrome on WINDOWS (5814edb64a75209fe54987e157db3ff9)] -> xpath: (//input[@name='AddressLine1'])[2]]br]]>
+            </line>
+            <line>
+              <![CDATA[3g <--- This value has been passed into ---> [[ChromeDriver: chrome on WINDOWS (5814edb64a75209fe54987e157db3ff9)] -> xpath: //input[@id='addressLine2Modal']]br]]>
+            </line>
+            <line>
+              <![CDATA[Elmhurst <--- This value has been passed into ---> [[ChromeDriver: chrome on WINDOWS (5814edb64a75209fe54987e157db3ff9)] -> xpath: //input[@id='cityModal']]br]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- creatpropertyQoteTest -->
+        <test-method is-config="true" signature="teareUp()[pri:0, instance:progressive.tdd.test.property.PropertyQuoteTest@29215f06]" started-at="2023-02-13T20:29:52 PST" name="teareUp" finished-at="2023-02-13T20:29:52 PST" duration-ms="311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teareUp -->
+      </class> <!-- progressive.tdd.test.property.PropertyQuoteTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
