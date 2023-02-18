@@ -8,29 +8,29 @@ import static progressive.tdd.common.CommonActions.*;
 
 public class GetAQuotePage {
 	public GetAQuotePage(WebDriver driver) {
-	PageFactory.initElements(driver,this);	
-		
-	}
-		@FindBy(id = "//input[@id='H']")
-		WebElement clickHomeOwnersElement;		
+		PageFactory.initElements(driver, this);
 
-		public void clickHomeOwnersElement(WebElement string) {
-			clickHomeOwnersElement.click();
-		}
-
-		@FindBy(xpath="//input[@id='zipCode_overlay_subproducts']")
-		WebElement insertZipCodField;
-
-		public void insertZipCodeField(String string) {
-			insertZipCodField.sendKeys(string);
-		}
-		@FindBy(xpath = "//input[@id='qsButton_overlay_subproducts']")
-		WebElement clickGetAQuotElement;
-		public void clickgetAQuote() {
-			clickGetAQuotElement.click();
-		}
-		
-		
 	}
 
+	@FindBy(id = "//input[@id='H']")
+	WebElement clickHomeOwnersElement;
 
+	public void clickHomeOwnersElement(WebElement string) {
+		clickHomeOwnersElement.click();
+	}
+
+	@FindBy(xpath = "//input[@id='zipCode_overlay_subproducts']")
+	WebElement insertZipCodField;
+
+	public void insertZipCodeField(String string) {
+		insertZipCodField.sendKeys(string);
+	}
+
+	@FindBy(xpath = "//input[@id='qsButton_overlay_subproducts']")
+	WebElement clickGetAQuotElement;
+
+	public void clickgetAQuote() {
+		clickGetAQuotElement.click();
+	}
+
+}

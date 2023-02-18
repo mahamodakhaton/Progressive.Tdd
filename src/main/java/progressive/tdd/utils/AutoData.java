@@ -1,4 +1,4 @@
-package progressiveTddUtils;
+package progressive.tdd.utils;
 
 public class AutoData {
 	private String validatehomePageText;
@@ -22,8 +22,6 @@ public class AutoData {
 
 		}
 	}
-
-	
 
 	public String getValidatehomePageText() {
 		return validatehomePageText;

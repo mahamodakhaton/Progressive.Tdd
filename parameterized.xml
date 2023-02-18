@@ -7,10 +7,9 @@
    <parameter name="zipCode" value="11373"/>
    <parameter name="firstName" value="mhmd"/>
    <parameter name="lastName" value="khon"/>
-   <parameter name="dateofBirth" value="01/01/1980"/>
+   <parameter name="dateofBirth" value="01/05/1980"/>
     <classes>         
       <class name="progressive.tdd.test.auto.ParameterizedTestAuto"/>
-     
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

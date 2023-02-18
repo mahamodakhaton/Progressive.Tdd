@@ -1,49 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="5" total="6" passed="1" failed="0" skipped="0">
+<testng-results ignored="4" total="5" passed="0" failed="1" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[85-15 <--- This value has been passed into ---> [[ChromeDriver: chrome on WINDOWS (5814edb64a75209fe54987e157db3ff9)] -> xpath: //input[@name='SingleLineAddressSearch']]br]]>
-    </line>
-    <line>
-      <![CDATA[84-11 <--- This value has been passed into ---> [[ChromeDriver: chrome on WINDOWS (5814edb64a75209fe54987e157db3ff9)] -> xpath: (//input[@name='AddressLine1'])[2]]br]]>
-    </line>
-    <line>
-      <![CDATA[3g <--- This value has been passed into ---> [[ChromeDriver: chrome on WINDOWS (5814edb64a75209fe54987e157db3ff9)] -> xpath: //input[@id='addressLine2Modal']]br]]>
-    </line>
-    <line>
-      <![CDATA[Elmhurst <--- This value has been passed into ---> [[ChromeDriver: chrome on WINDOWS (5814edb64a75209fe54987e157db3ff9)] -> xpath: //input[@id='cityModal']]br]]>
-    </line>
   </reporter-output>
-  <suite started-at="2023-02-13T20:29:11 PST" name="Suite" finished-at="2023-02-13T20:29:52 PST" duration-ms="41209">
+  <suite started-at="2023-02-17T21:56:30 PST" name="Default suite" finished-at="2023-02-17T21:56:30 PST" duration-ms="78">
     <groups>
     </groups>
-    <test started-at="2023-02-13T20:29:11 PST" name="Test" finished-at="2023-02-13T20:29:52 PST" duration-ms="41209">
-      <class name="progressive.tdd.test.property.PropertyQuoteTest">
-        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:progressive.tdd.test.property.PropertyQuoteTest@29215f06]" started-at="2023-02-13T20:29:11 PST" name="setUpDriver" finished-at="2023-02-13T20:29:15 PST" duration-ms="4482" status="PASS">
+    <test started-at="2023-02-17T21:56:30 PST" name="Default test" finished-at="2023-02-17T21:56:30 PST" duration-ms="78">
+      <class name="progressive.tdd.practice.UniteTests">
+        <test-method signature="uniteTestAutoDataZeroLength()[pri:0, instance:progressive.tdd.practice.UniteTests@2b91004a]" started-at="2023-02-17T21:56:30 PST" name="uniteTestAutoDataZeroLength" finished-at="2023-02-17T21:56:30 PST" duration-ms="10" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at progressive.tdd.utils.AutoData.<init>(AutoData.java:15)
+at progressive.tdd.practice.UniteTests.uniteTestAutoDataZeroLength(UniteTests.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpDriver -->
-        <test-method signature="creatpropertyQoteTest()[pri:0, instance:progressive.tdd.test.property.PropertyQuoteTest@29215f06]" started-at="2023-02-13T20:29:15 PST" name="creatpropertyQoteTest" finished-at="2023-02-13T20:29:52 PST" duration-ms="36363" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[85-15 <--- This value has been passed into ---> [[ChromeDriver: chrome on WINDOWS (5814edb64a75209fe54987e157db3ff9)] -> xpath: //input[@name='SingleLineAddressSearch']]br]]>
-            </line>
-            <line>
-              <![CDATA[84-11 <--- This value has been passed into ---> [[ChromeDriver: chrome on WINDOWS (5814edb64a75209fe54987e157db3ff9)] -> xpath: (//input[@name='AddressLine1'])[2]]br]]>
-            </line>
-            <line>
-              <![CDATA[3g <--- This value has been passed into ---> [[ChromeDriver: chrome on WINDOWS (5814edb64a75209fe54987e157db3ff9)] -> xpath: //input[@id='addressLine2Modal']]br]]>
-            </line>
-            <line>
-              <![CDATA[Elmhurst <--- This value has been passed into ---> [[ChromeDriver: chrome on WINDOWS (5814edb64a75209fe54987e157db3ff9)] -> xpath: //input[@id='cityModal']]br]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- creatpropertyQoteTest -->
-        <test-method is-config="true" signature="teareUp()[pri:0, instance:progressive.tdd.test.property.PropertyQuoteTest@29215f06]" started-at="2023-02-13T20:29:52 PST" name="teareUp" finished-at="2023-02-13T20:29:52 PST" duration-ms="311" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teareUp -->
-      </class> <!-- progressive.tdd.test.property.PropertyQuoteTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- uniteTestAutoDataZeroLength -->
+      </class> <!-- progressive.tdd.practice.UniteTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

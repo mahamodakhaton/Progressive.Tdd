@@ -12,7 +12,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class LinearScriptingTest {
 	WebDriver driver;
 	private WebElement startAquotebtn;
-	
+
 	@BeforeMethod
 	public void init() {
 		WebDriverManager.chromedriver().setup();
@@ -20,17 +20,18 @@ public class LinearScriptingTest {
 		driver.get("https://www.walmart.com/");
 		driver.manage().window().maximize();
 
-}
+	}
+
 	@Test
 	public void linearScripting() {
 		WebElement startAquoteBtn = driver.findElement(By.id(null));
-				startAquoteBtn.click();
+		startAquoteBtn.click();
 	}
+
 	@Test
 	public void linerScripting() {
 		WebElement startAquotebtn = driver.findElement(By.id(null));
 		startAquotebtn.click();
 	}
+
 }
-
-

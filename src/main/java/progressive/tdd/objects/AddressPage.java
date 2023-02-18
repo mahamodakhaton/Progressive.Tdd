@@ -4,15 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import com.fasterxml.jackson.core.sym.Name;
-import com.github.dockerjava.api.model.Driver;
-
 import static progressive.tdd.common.CommonActions.*;
-
-import java.time.Duration;
 
 public class AddressPage {
 
@@ -64,10 +56,10 @@ public class AddressPage {
 	WebElement insertAddressElement;
 
 	public void insertAddressElement(String Number) {
-		//WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(15));
-		//wait.until(ExpectedConditions.elementToBeClickable(insertAddressElement));
+		// WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(15));
+		// wait.until(ExpectedConditions.elementToBeClickable(insertAddressElement));
 		insert(insertAddressElement, Number);
-		
+
 	}
 
 	@FindBy(xpath = "(//input[@name='paButton'])[1]")
@@ -76,29 +68,34 @@ public class AddressPage {
 	public void clickLetsGo() {
 		clickletsGo.click();
 	}
+
 	@FindBy(xpath = "(//input[@name='AddressLine1'])[2]")
 	WebElement insertPropertyAddress;
+
 	public void insertPropertyAddress(String number) {
-		insert(insertPropertyAddress,number);
+		insert(insertPropertyAddress, number);
 	}
+
 	@FindBy(xpath = "//input[@id='addressLine2Modal']")
 	WebElement insertApartmentNumber;
+
 	public void insertApartmentNumber(String number) {
-		insert(insertApartmentNumber,number);
+		insert(insertApartmentNumber, number);
 	}
+
 	@FindBy(xpath = "//input[@id='cityModal']")
 	WebElement insertCity;
-	
+
 	public void insertCity(String name) {
-		insert(insertCity,name);
-		
+		insert(insertCity, name);
+
 	}
+
 	@FindBy(id = "paModalButton")
 	WebElement clickContinueBtn;
+
 	public void clickContinueBtn() {
 		clickContinueBtn.click();
 	}
-	
-	
 
 }

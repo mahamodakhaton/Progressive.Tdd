@@ -1,17 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="browser" value="chrome"/>
-  <test thread-count="5" name="regression(failed)">
+  <parameter name="browser" value="edge"/>
+  <test thread-count="5" name="edge(failed)">
     <classes>
-      <class name="progressive.tdd.test.property.PropertyQuoteTest">
+      <class name="progressive.tdd.test.auto.AutoQuoteTest">
         <methods>
+          <include name="getResult"/>
+          <include name="startExtentsReport"/>
           <include name="teareUp"/>
           <include name="setUpDriver"/>
-          <include name="setUpSuit"/>
-          <include name="creatpropertyQoteTest"/>
+          <include name="initExtentReport"/>
+          <include name="closeReport"/>
+          <include name="createAutoQuoteTest"/>
         </methods>
-      </class> <!-- progressive.tdd.test.property.PropertyQuoteTest -->
+      </class> <!-- progressive.tdd.test.auto.AutoQuoteTest -->
     </classes>
-  </test> <!-- regression(failed) -->
+  </test> <!-- edge(failed) -->
+  <test thread-count="5" name="firefox(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="progressive.tdd.test.auto.AutoQuoteTest">
+        <methods>
+          <include name="getResult"/>
+          <include name="startExtentsReport"/>
+          <include name="teareUp"/>
+          <include name="setUpDriver"/>
+          <include name="initExtentReport"/>
+          <include name="closeReport"/>
+          <include name="createAutoQuoteTest"/>
+        </methods>
+      </class> <!-- progressive.tdd.test.auto.AutoQuoteTest -->
+    </classes>
+  </test> <!-- firefox(failed) -->
 </suite> <!-- Failed suite [Suite] -->

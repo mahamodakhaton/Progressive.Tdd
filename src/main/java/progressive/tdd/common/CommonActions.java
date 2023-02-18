@@ -10,6 +10,7 @@ import progressive.tdd.reporting.Logs;
 
 public class CommonActions {
 
+	private static String actual;
 	protected WebDriver driver;
 
 	public CommonActions(WebDriver driver) {
@@ -17,13 +18,23 @@ public class CommonActions {
 	}
 
 	public static void click(WebElement element) {
-		element.click();
-		Logs.log(element + "---has been clicked");
+		try {
+			element.click();
+			Logs.log(element + "---has been clicked");
+		} catch (NullPointerException | NoSuchElementException e) {
+			Logs.log(element + "---Element not Found");
+			Assert.fail();
+		}
 	}
 
 	public static void validateText(WebElement element, String expected) {
-		String actual = element.getText();
-		Logs.log("Validiting---> Actual:***" + actual + "***.Expected:***" + expected + "***");
+		try {
+			String actual = element.getText();
+			Logs.log("Validiting---> Actual:***" + actual + "***.Expected:***" + expected + "***");
+		} catch (NullPointerException | NoSuchElementException e) {
+			Logs.log(element + "---Element not Found");
+			Assert.fail();
+		}
 		Assert.assertEquals(actual, expected);
 	}
 
@@ -36,8 +47,14 @@ public class CommonActions {
 	}
 
 	public static void insert(WebElement element, String value) {
-		element.sendKeys(value);
-		Logs.log(value + " <--- This value has been passed into ---> " + element);
+		try {
+			element.sendKeys(value);
+			Logs.log(value + " <--- This value has been passed into ---> " + element);
+		} catch (NullPointerException | NoSuchElementException e) {
+			Logs.log(element + "---Element not Found");
+			Assert.fail();
+
+		}
 	}
 
 }

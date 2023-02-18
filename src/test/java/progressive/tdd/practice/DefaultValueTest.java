@@ -7,24 +7,21 @@ public class DefaultValueTest {
 	int a;
 	char c;
 	boolean b;
+
 	@Test(enabled = false)
 	public void defaultValueTestin() {
 		System.out.println("string");
 		System.out.println(a);
 		System.out.println(c);
-		System.out.println(b);			
+		System.out.println(b);
 
-}
+	}
+
 	@Test
 	public void parseLongValidation() {
 		String aString = "123*kskfnk12fakjfvna;kjn";
-		String bstring = aString.trim().replaceAll("[^0-9]","");
+		String bstring = aString.trim().replaceAll("[^0-9]", "");
 		System.out.println(Long.parseLong(bstring));
 	}
-	
-	
-		
-	}
 
-
-
+}
